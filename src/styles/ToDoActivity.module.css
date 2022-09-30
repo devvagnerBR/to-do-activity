@@ -1,0 +1,146 @@
+.container {
+	background: var(--dark);
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 15vh 30vh 55vh;
+	padding: 10px;
+}
+
+header {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 0.9rem;
+	color: var(--primary);
+}
+header h4 {
+	color: var(--light_grey);
+	letter-spacing: 2px;
+	margin-top: 20px;
+	font-size: 1.2rem;
+}
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.text_choose {
+	color: var(--light_grey);
+	letter-spacing: 9px;
+	margin-left: 7px;
+
+}
+main {
+	background: var(--primary);
+	width: 80%;
+	height: 65%;
+	border-radius: 5px;
+	align-items: flex-start;
+	word-wrap: break-word;
+	font-size: 1.4rem;
+	font-weight: 600;
+	color: var(--dark);
+	padding: 15px 5px 10px 5px;
+}
+main p {
+	padding: 10px;
+}
+.buttons {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 90%;
+	gap: 5px;
+}
+
+.buttons button {
+	width: 80%;
+	border-radius: 5px;
+	height: 50px;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	color: var(--dark);
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.buttons button:active {
+	background: var(--light_grey);
+	transition: 0.1s;
+}
+.buttons :nth-child(1) {
+	background: var(--primary);
+}
+.buttons :nth-child(2) {
+	background: var(--btn-2);
+}
+.buttons :nth-child(3) {
+	background: var(--btn-3);
+}
+.buttons :nth-child(4) {
+	background: var(--btn-4);
+}
+.buttons :nth-child(5) {
+	background: var(--btn-5);
+}
+.buttons :nth-child(6) {
+	background: var(--btn-6);
+}
+.buttons :nth-child(7) {
+	background: var(--btn-7);
+}
+
+@media (min-width: 400px) {
+	.container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	header {
+		width: 43vh;
+		height: 100px;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+
+	}
+	.text_choose {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		height: 55px;
+		margin-top: 30px;
+
+	}
+	main {
+		max-width: 400px;
+		min-width: 400px;
+		height: 13vh;
+		padding: 5px;
+	}
+	main p {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.buttons {
+		width: 26vw;
+		height: 60vh;
+	}
+
+	.buttons button{
+		min-width: 390px;
+	}
+}

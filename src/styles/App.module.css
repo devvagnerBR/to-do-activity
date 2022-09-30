@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto Mono", monospace;
+	border: none;
+}
+
+.App {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+:root {
+	--primary: #eabd4a;
+	--light_grey: #51504F;
+	--dark: #1d1d1d;
+	--btn-2: #74ea4a;
+	--btn-3: #4a93ea;
+	--btn-4: #ea7a4a;
+	--btn-5: #4aeacd;
+	--btn-6: #ad4aea;
+	--btn-7: #ea4a4a;
+}
+
+@media (min-width: 400px){
+	
+	}
